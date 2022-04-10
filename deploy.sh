@@ -13,7 +13,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f git@github.com:xmushan/mushanblog.git master:gh-pages
 
 cd -

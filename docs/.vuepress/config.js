@@ -19,7 +19,7 @@ module.exports = {
         personalInfo: {
             name: "xumushan",
             avatar: "/img/avatar.jpeg",
-            description: "生存还是毁灭，这是个问题",
+            description: "今天不想做，所以才要做",
             sns: {
                 github: 'Renovamen',  // Github
                 email: 'renovamenzxh@gmail.com',  // 邮箱

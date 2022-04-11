@@ -1,17 +1,24 @@
+import { navbar } from "./configs";
+
+
 module.exports = {
     title: 'xumushan',
     description: "xumushan's Blog ",
     theme: 'gungnir',
+    head: [
+        "link",
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "16x16",
+          href: `/img/logo/favicon-16x16.png`
+        }
+    ],
     themeConfig: {
         base: "/",
-        dest: 'build',
         hitokoto: true,
-        search: true, // 可选：是否启用搜索，默认：true
-        searchMaxSuggestions: 10, // 可选：搜索的最大结果数，默认：10
-        searchPlaceholder: '$ grep ...', // 可选：搜索栏占位文本，默认："$ grep ..."
-        searchIcon: 'ri-search-2-line', // 可选：搜索图标
         footer: `
-        &copy; <a href="https://github.com/Renovamen" target="_blank">Renovamen</a> 2018-2021
+        &copy; <a href="https://github.com/xmushan" target="_blank">xmushan</a>
         <br>
         Powered by <a href="https://vuepress.vuejs.org" target="_blank">VuePress</a> &
         <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
@@ -21,20 +28,49 @@ module.exports = {
             avatar: "/img/avatar.jpeg",
             description: "今天不想做，所以才要做",
             sns: {
-                github: 'Renovamen',  // Github
-                email: 'renovamenzxh@gmail.com',  // 邮箱
+                github: 'xmushan',  // Github
+                email: 'xmushan@163.com',  // 邮箱
             }
         },
         homeHeaderImages: {
-            api: "https://source.unsplash.com/1600x900/?nature"
+            // api: "https://source.unsplash.com/1600x900/?nature"
+            local: [
+                {
+                    "path": "/img/home-bg/1.jpg",
+                    "mask": "rgba(40, 57, 101, .4)"
+                },
+                {
+                    "path": "/img/home-bg/2.jpeg",
+                    "mask": "rgba(40, 57, 101, .4)"
+                },
+                {
+                    "path": "/img/home-bg/3.jpeg",
+                    "mask": "rgba(40, 57, 101, .4)"
+                },
+            ]
         },
+            
         pages: {
             tags: {
-                subtitle: '吼哇朋友们，这是标签页',
+                subtitle: '永远骄傲！～',
+                // bgImage: {
+                //     path: '/img/pages/tags.jpg',
+                //     mask: 'rgba(211, 136, 37, .5)'
+                // }
             },
             links: {
-                subtitle: '吼哇朋友们，这是链接页',
+                subtitle: '永远自豪！～',
+                // bgImage: {
+                //     path: '/img/pages/tags.jpg',
+                //     mask: 'rgba(211, 136, 37, .5)'
+                // }
             }
+        },
+        locales: {
+            "/": {
+                navbar: navbar.en,
+                // sidebar: sidebar.en
+              },
         },
         comment: {
             platform: "github",

@@ -1,4 +1,4 @@
-export const zh = [
+module.exports  = [
     {
         text: "首页",
         link: "/",
@@ -8,6 +8,11 @@ export const zh = [
         text: "标签",
         link: "/tags/",
         icon: "fa-tag"
+      },
+      {
+        text: "链接",
+        link: "/links/",
+        icon: "fa-link"
       },
 ]
 

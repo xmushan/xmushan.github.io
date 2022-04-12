@@ -1,19 +1,7 @@
-import { navbar } from "./configs";
-
-
 module.exports = {
     title: 'xumushan',
     description: "xumushan's Blog ",
     theme: 'gungnir',
-    head: [
-        "link",
-        {
-          rel: "icon",
-          type: "image/png",
-          sizes: "16x16",
-          href: `/img/logo/favicon-16x16.png`
-        }
-    ],
     themeConfig: {
         base: "/",
         hitokoto: true,
@@ -49,7 +37,7 @@ module.exports = {
                 },
             ]
         },
-            
+
         pages: {
             tags: {
                 subtitle: '永远骄傲！～',
@@ -68,9 +56,11 @@ module.exports = {
         },
         locales: {
             "/": {
-                navbar: navbar.en,
-                // sidebar: sidebar.en
-              },
+                label: 'English',
+                selectText: 'Languages',
+                nav: require('./configs/navBar/zh'),
+                // sidebar: require('./configs/sidebar/en'),
+            },
         },
         comment: {
             platform: "github",

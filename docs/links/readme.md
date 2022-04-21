@@ -6,6 +6,6 @@ links:
     items:
       - sitename: ME?
         url: https://github.com/xmushan
-        img: /img/links/me.png
+        img: /img/avatar.jpeg
         desc: My Github
 ---

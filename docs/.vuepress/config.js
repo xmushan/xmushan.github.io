@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'xumushan',
+    title: 'mushan的学习日记',
     description: "xumushan's Blog ",
     theme: 'gungnir',
     themeConfig: {
@@ -58,8 +58,7 @@ module.exports = {
             "/": {
                 label: 'English',
                 selectText: 'Languages',
-                nav: require('./configs/navBar/zh'),
-                // sidebar: require('./configs/sidebar/en'),
+                nav: require('./configs/navBar/en'),
             },
         },
         comment: {

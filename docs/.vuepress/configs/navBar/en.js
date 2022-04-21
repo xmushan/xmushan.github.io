@@ -1,18 +1,17 @@
 module.exports  = [
     {
-        text: "首页",
+        text: "Home",
         link: "/",
         icon: "fa-fort-awesome"
       },
       {
-        text: "标签",
+        text: "Tag",
         link: "/tags/",
         icon: "fa-tag"
       },
       {
-        text: "链接",
+        text: "Link",
         link: "/links/",
-        icon: "fa-link"
+        icon: "fa-satellite-dish"
       },
 ]
-
